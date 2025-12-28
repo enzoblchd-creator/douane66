@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #03040D; /* Ta couleur exacte */
+  color: white;
+}
+
+body {
+  background-color: #03040D;
+  min-height: 100vh;
+  /* On enlève le gradient ici pour le gérer avec les cercles dans la page */
+}
