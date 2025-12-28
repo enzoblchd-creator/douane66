@@ -2,7 +2,8 @@ const { Server } = require("socket.io");
 
 const io = new Server(3001, {
   cors: {
-    origin: "http://localhost:3000",
+    // On accepte le localhost (pour tes tests) ET ton site en ligne
+    origin: ["http://localhost:3000", "https://douane66.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
